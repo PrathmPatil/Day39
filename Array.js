@@ -1,14 +1,16 @@
  /*
-         UC1
-         Write a program in the following steps
-         a. Generates 10 Random 3 Digit number.
-         b. Store this random numbers into a array.
-         c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
-         */
+             UC1
+             Write a program in the following steps
+             a. Generates 10 Random 3 Digit number.
+             b. Store this random numbers into a array.
+             c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
+             */
  let arr = new Array();
+ let arrUC2 = new Array();
  for (let i = 0; i < 10; i++) {
      let number = Math.floor(99 + Math.random() * 999)
      arr.push(number)
+     arrUC2.push(number)
  }
  console.log(arr)
 
@@ -30,7 +32,26 @@
  Extend the above program to sort the array and then find the 2nd largest
 and the 2nd smallest element.
  */
+
  console.log(arr)
  arrUC2.sort();
  console.log(arrUC2)
  console.log("Second Smallest Number: " + arrUC2[1] + " and " + " Second Largest Number: " + arrUC2[arr.length - 2])
+
+ /*
+ UC3
+ Extend the Prime Factorization Program to store all the Prime Factors of a
+number n into an array and finally display the output.
+*/
+ let primearray = new Array()
+
+ function primeFactor(num) {
+     for (let i = 2; i <= num / 2; i++) {
+         if (num % i === 0) {
+             primearray.push(i)
+             num = num / i
+         }
+     }
+ }
+ primeFactor(400)
+ console.log(primearray)
