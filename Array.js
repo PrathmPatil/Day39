@@ -1,10 +1,10 @@
  /*
-             UC1
-             Write a program in the following steps
-             a. Generates 10 Random 3 Digit number.
-             b. Store this random numbers into a array.
-             c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
-             */
+                UC1
+                Write a program in the following steps
+                a. Generates 10 Random 3 Digit number.
+                b. Store this random numbers into a array.
+                c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
+                */
  let arr = new Array();
  let arrUC2 = new Array();
  for (let i = 0; i < 10; i++) {
@@ -55,3 +55,25 @@ number n into an array and finally display the output.
  }
  primeFactor(400)
  console.log(primearray)
+     /*
+     //UC4 
+     Write a Program to show Sum of three Integer adds to ZERO
+     */
+ console.log("Triplate numbers")
+ let arrOfNum = new Array(-20, 0, 20, 40, -20, -40, 80)
+
+ function triplateNumber(arrOfNum) {
+     for (let i = 0; i < arrOfNum.length; i++) {
+         for (let j = i + 1; j < arrOfNum.length; j++) {
+             for (let k = j + 1; k < arrOfNum.length; k++) {
+                 if (arrOfNum[i] + arrOfNum[j] + arrOfNum[k] == 0) {
+                     console.log(arrOfNum[i] + " ," + arrOfNum[j] + " ," + arrOfNum[k])
+                 }
+             }
+         }
+     }
+ }
+ triplateNumber(arrOfNum)
+
+ /*
+  */
