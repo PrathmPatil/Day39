@@ -1,10 +1,10 @@
  /*
-                UC1
-                Write a program in the following steps
-                a. Generates 10 Random 3 Digit number.
-                b. Store this random numbers into a array.
-                c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
-                */
+                  UC1
+                  Write a program in the following steps
+                  a. Generates 10 Random 3 Digit number.
+                  b. Store this random numbers into a array.
+                  c. Then find the 2nd largest and the 2nd smallest element without sorting the array.
+                  */
  let arr = new Array();
  let arrUC2 = new Array();
  for (let i = 0; i < 10; i++) {
@@ -76,4 +76,18 @@ number n into an array and finally display the output.
  triplateNumber(arrOfNum)
 
  /*
+ UC5
+ Take a range from 0 – 100, find the digits that are repeated twice like 33, 77,
+etc and store them in an array
   */
+ let repeatNumber = new Array();
+
+ function repeatedElement() {
+     for (let i = 0; i <= 100; i++) {
+         if (i % 11 == 0 && 0 != i) {
+             repeatNumber.push(i);
+         }
+     }
+ }
+ repeatedElement();
+ console.log(repeatNumber);
